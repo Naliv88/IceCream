@@ -1,0 +1,9 @@
+body{
+    font-family: 'DM Sans';
+    font-size: 16px;
+    color: #fff;
+    
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
