@@ -1,0 +1,19 @@
+:root {
+    // Главный цвет
+    --color-general: #D41443;
+    // Второстепенный цвет
+    --color-second: #FFA5BA;
+    // Цвет белой кнопки
+    --btn-white: #ffffff;
+    // Ховер белой кнопки
+    --btn-white: #ECEBEB;
+    // Цвет заголовков
+    --color-title: #000;
+    // Цвет текста
+    --color-text: #907E82;
+    // Эффект при наведении на кнопки и ссылок
+    --anim-link: 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    // Шрифты
+    --font-general: 'DM Sans';
+    --font-second: 'Titan One';
+}
