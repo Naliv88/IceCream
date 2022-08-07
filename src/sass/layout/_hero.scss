@@ -62,14 +62,10 @@
             }
 
         &-link{
-            font-family: 'DM Sans';
-            font-style: normal;
-            font-weight: 400;
+            font-family: var(--font-general);
             font-size: 8px;
             line-height: 1.25;
-            // @media screen and (min-width: 768px) { 
-            
-            // }
+
             @media screen and (min-width: 1200px) {
                 font-size: 14px;
                 line-height: 1.29;
@@ -95,9 +91,6 @@
         }
 
         &-text{
-            font-family: 'DM Sans';
-            font-style: normal;
-            font-weight: 400;
             font-size: 8px;
             line-height: 150%;
             max-width: 114px;
@@ -155,6 +148,7 @@
         position: absolute;
         right: 15px;
         top: 92px;
+        z-index: 5;
 
         display: none;
 
@@ -162,16 +156,17 @@
             display: initial;
         }
         
-        @media screen and (min-width: 1200px) {
-            display: initial;
-        
-        }
     }
     &__shop-item{
         margin-top: 16px;
 
         &::before{
             content: '';
+            position: absolute;
+            // top: 0;
+            right: -10px;
+            z-index: 3;
+
             width: 16px;
             height: 16px;
             background-color: #FFFFFF;
@@ -179,8 +174,7 @@
         }
     }
     &__shop-number{
-        font-family: 'Titan One';
-        font-weight: 400;
+        font-family: var(--font-second);
         font-size: 28px;
         line-height: 1.14;
  
@@ -191,7 +185,6 @@
         color: #D41443;
     }
     &__shop-desc{
-        font-family: 'DM Sans';
         font-size: 8px;
         line-height: 10px;
         text-align: right;
