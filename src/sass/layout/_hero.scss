@@ -1,0 +1,218 @@
+.hero{
+    position: relative;
+    z-index: 50;
+
+    background-color: #FFB8CA;
+    
+
+    padding-top: 194px;
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 102px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 123px;
+        }
+
+
+    // Title
+    &__title{
+        
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        max-width: 218px;
+
+        @media screen and (min-width: 768px) {
+                font-size: 22px;
+                line-height: 1.14;
+                max-width: 162px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                font-size: 38px;
+                line-height: 1.16;
+                max-width: 277px;
+            }
+
+        &-span{
+            font-size: 58px;
+            line-height: 90.5%;
+            color: #D41443;
+        }
+    }
+
+// Hero buttons
+    &__button{
+        margin-top: 20px;
+        display: flex;
+        gap: 8px;
+        
+        // @media screen and (min-width: 768px) {
+             
+        //     }
+        @media screen and (min-width: 1200px) {
+            margin-top: 24px;
+            gap: 12px;
+               
+            }
+
+        &-link{
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 1.25;
+            // @media screen and (min-width: 768px) { 
+            
+            // }
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+                line-height: 1.29;
+            }
+        
+        }
+
+    }
+
+    &__label{
+        display: none;
+        align-items: center;
+
+        @media screen and (min-width: 768px) { 
+            display: flex;
+           
+            margin-top: 20px;
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            // max-width: 266px;
+            margin-top: 40px;
+        }
+
+        &-text{
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 150%;
+            max-width: 114px;
+
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+                line-height: 1.43;
+                max-width: 200px;
+            }
+        }
+    }
+
+    &__image{
+        display: none;
+        position: absolute;
+        top: 92px;
+        left: 117px;
+
+        width: 346px;
+        height: 344px;
+
+            @media screen and (min-width: 768px) {
+                width: 335px;
+                height: 333px;
+        
+            }
+        
+            @media screen and (min-width: 1200px) {
+                width: 534px;
+                height: 534px;
+        
+            }
+        
+        background-image: radial-gradient(circle at center, #FFA5BA 60%, #FFB8CA 0%);
+            background-position: 25% 75%;
+            background-repeat: no-repeat;
+       
+            
+        &-picture{
+            max-width: 171px; 
+            @media screen and (min-width: 768px) {
+                max-width: 143px;
+            
+            }
+            
+            @media screen and (min-width: 1200px) {     
+                max-width: 236px;
+
+            }
+        }
+        
+    }
+
+    &__shop-list{
+        position: absolute;
+        right: 15px;
+        top: 92px;
+
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: initial;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            display: initial;
+        
+        }
+    }
+    &__shop-item{
+        margin-top: 16px;
+
+        &::before{
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+        }
+    }
+    &__shop-number{
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1.14;
+ 
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+        color: #D41443;
+    }
+    &__shop-desc{
+        font-family: 'DM Sans';
+        font-size: 8px;
+        line-height: 10px;
+        text-align: right;
+        
+        color: #FFFFFF;
+    }
+
+
+    &__girl{
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: initial;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        
+        }
+        
+        @media screen and (min-width: 1200px) {
+            display: initial;
+        
+        }
+    }
+}
