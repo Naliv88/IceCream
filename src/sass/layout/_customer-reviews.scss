@@ -4,6 +4,11 @@
 }
 
 .slider {
+    display: flex;
+    border: 2px solid black;
+}
+
+.slider__item  {
     width: 968px;
-    height: 138px;
+    // height: 138px;
 }
