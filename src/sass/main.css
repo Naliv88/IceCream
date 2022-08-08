@@ -120,6 +120,36 @@ body.no-scroll {
   }
 }
 
+.btn-other {
+  text-align: center;
+  border-radius: 22px;
+  padding: 13px 37px;
+  font-size: 16px;
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+.btn-hero {
+  text-align: center;
+  border-radius: 20px;
+  padding: 11px 24px;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.btn-white {
+  color: var(--color-general);
+  background-color: var(--btn-white);
+}
+.btn-white:hover, .btn-white:focus {
+  background-color: #ECEBEB;
+}
+
+.btn-red {
+  color: var(--btn-white);
+  background-color: var(--color-general);
+}
+
 .section-title {
   font-family: var(--font-second);
   color: var(--color-general);
@@ -177,19 +207,28 @@ body.no-scroll {
   position: relative;
   z-index: 50;
   background-color: #FFB8CA;
+  background-image: radial-gradient(circle at 75% 50%, #FFA5BA 65%, #FFB8CA 0%);
+  background-repeat: no-repeat;
   padding-top: 194px;
+  padding-bottom: 158px;
 }
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 102px;
+    padding-bottom: 16px;
+    background-image: radial-gradient(circle at 60% 50%, #FFA5BA 30%, #FFB8CA 0%);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 123px;
+    padding-bottom: 60px;
+    background-image: radial-gradient(circle at 62% 45%, #ffa5ba 31%, #ffb8ca 0%);
   }
 }
 .hero__title {
+  position: relative;
+  z-index: 53;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 26px;
@@ -218,6 +257,8 @@ body.no-scroll {
   color: #D41443;
 }
 .hero__button {
+  position: relative;
+  z-index: 53;
   margin-top: 20px;
   display: flex;
   gap: 8px;
@@ -268,26 +309,26 @@ body.no-scroll {
   }
 }
 .hero__image {
-  display: none;
   position: absolute;
-  top: 92px;
-  left: 117px;
-  width: 346px;
-  height: 344px;
-  background-image: radial-gradient(circle at center, #FFA5BA 60%, #FFB8CA 0%);
-  background-position: 25% 75%;
-  background-repeat: no-repeat;
+  top: 19%;
+  left: 34%;
+  max-width: 346px;
+  max-height: 344px;
 }
 @media screen and (min-width: 768px) {
   .hero__image {
-    width: 335px;
-    height: 333px;
+    max-width: 335px;
+    max-height: 333px;
+    top: 23%;
+    left: 47%;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__image {
-    width: 534px;
-    height: 534px;
+    max-width: 534px;
+    max-height: 534px;
+    top: 11%;
+    left: 50%;
   }
 }
 .hero__image-picture {
@@ -329,6 +370,8 @@ body.no-scroll {
   border-radius: 50%;
 }
 .hero__shop-number {
+  position: relative;
+  z-index: 51;
   font-family: var(--font-second);
   font-size: 28px;
   line-height: 1.14;
