@@ -65,6 +65,7 @@
         margin-top: 20px;
         display: flex;
         gap: 8px;
+        padding-left: 0;
         
         @media screen and (min-width: 1200px) {
             margin-top: 24px;
@@ -182,8 +183,8 @@
 // number of shop
     &__shop-list{
         position: absolute;
-        right: 15px;
-        top: 92px;
+        top: 18%;
+        left: 89%;
         z-index: 5;
 
         display: none;
@@ -229,7 +230,7 @@
         color: #FFFFFF;
     }
 
-    
+
 // Image girl
     &__girl{
         display: none;
@@ -237,7 +238,7 @@
             display: initial;
             position: absolute;
             bottom: 0;
-            right: 0;
+            right: 2%;
         
         }
         
