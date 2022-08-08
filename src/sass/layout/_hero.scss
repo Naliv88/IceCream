@@ -4,7 +4,7 @@
 
     background-color: #FFB8CA;
 
-    background-image: radial-gradient(circle at 75% 50%, #FFA5BA 65%, #FFB8CA 0%);
+    background-image: radial-gradient(circle at 75% 50%, var(--color-second) 65%, #FFB8CA 0%);
     background-repeat: no-repeat;
 
 
@@ -14,7 +14,7 @@
         @media screen and (min-width: 768px) {
             padding-top: 102px;
             padding-bottom: 16px;
-            background-image: radial-gradient(circle at 60% 50%, #FFA5BA 30%, #FFB8CA 0%);
+            background-image: radial-gradient(circle at 60% 50%, var(--color-second) 30%, #FFB8CA 0%);
         }
     
         @media screen and (min-width: 1200px) {
@@ -54,7 +54,7 @@
         &-span{
             font-size: 58px;
             line-height: 90.5%;
-            color: #D41443;
+            color: var(--color-general);
         }
     }
 
@@ -112,6 +112,30 @@
                 max-width: 200px;
             }
         }
+        &-button{
+            padding: 0;
+            background-color: inherit;
+            border-radius: 50%;
+
+            margin-top: 7px;
+            @media screen and (min-width: 1200px) {
+                    margin-top: 20px;
+                }
+      
+            transition: box-shadow var(--anim-link);
+            
+            &:hover, &:focus{
+                box-shadow: 2px 2px 15px -2px #D41443;
+                cursor: pointer;
+            }
+        }
+        &-img{
+            width: 18px;
+            
+            @media screen and (min-width: 1200px) {
+                width: 24px;
+            }
+        }
     }
 
     &__image{
@@ -154,6 +178,8 @@
         
     }
 
+
+// number of shop
     &__shop-list{
         position: absolute;
         right: 15px;
@@ -193,7 +219,7 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         
-        color: #D41443;
+        color: var(--color-general);
     }
     &__shop-desc{
         font-size: 8px;
@@ -203,7 +229,8 @@
         color: #FFFFFF;
     }
 
-
+    
+// Image girl
     &__girl{
         display: none;
         @media screen and (min-width: 768px) {
