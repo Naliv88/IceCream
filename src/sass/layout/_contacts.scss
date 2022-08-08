@@ -78,6 +78,8 @@ line-height: 1.83;
     align-items: center;
     gap: 12px;
 
+    
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
@@ -93,6 +95,8 @@ line-height: 1.83;
     height: 44px;
 
     margin-bottom: 60px;
+
+    font-weight: 700;
 }
 
 .contacts_franchise-btn:hover{
