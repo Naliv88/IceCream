@@ -102,7 +102,7 @@ body.no-scroll {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 480px;
+  max-width: 320px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -113,4 +113,123 @@ body.no-scroll {
   .container {
     max-width: 1200px;
   }
+}
+
+.hero {
+  position: relative;
+  z-index: 50;
+  background-color: #FFB8CA;
+  background-image: radial-gradient(circle at center, #FFA5BA 40%, #FFB8CA 0%);
+  background-position: top left;
+  background-repeat: no-repeat;
+  padding-top: 194px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 102px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 123px;
+  }
+}
+.hero__title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 218px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 22px;
+    line-height: 1.14;
+    max-width: 162px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.16;
+    max-width: 277px;
+  }
+}
+.hero__title-span {
+  font-size: 58px;
+  line-height: 90.5%;
+  color: #D41443;
+}
+.hero__button {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    margin-top: 24px;
+    gap: 12px;
+  }
+}
+.hero__button-link {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button-link {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+.hero__label {
+  display: none;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__label {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__label {
+    display: flex;
+    margin-top: 40px;
+  }
+}
+.hero__label-text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  max-width: 114px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__label-text {
+    font-size: 14px;
+    line-height: 1.43;
+    max-width: 200px;
+  }
+}
+.hero__image {
+  max-width: 171px;
+}
+@media screen and (min-width: 768px) {
+  .hero__image {
+    max-width: 143px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__image {
+    max-width: 236px;
+  }
+}
+.hero__girl {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
