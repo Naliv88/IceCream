@@ -3,21 +3,33 @@
     z-index: 50;
 
     background-color: #FFB8CA;
-    
+
+    background-image: radial-gradient(circle at 75% 50%, #FFA5BA 65%, #FFB8CA 0%);
+    background-repeat: no-repeat;
+
 
     padding-top: 194px;
+    padding-bottom: 158px;
     
         @media screen and (min-width: 768px) {
             padding-top: 102px;
+            padding-bottom: 16px;
+            background-image: radial-gradient(circle at 60% 50%, #FFA5BA 30%, #FFB8CA 0%);
         }
     
         @media screen and (min-width: 1200px) {
             padding-top: 123px;
+            padding-bottom: 60px;
+            background-image: radial-gradient(circle at 62% 45%,
+                #ffa5ba 31%,
+                #ffb8ca 0%);
         }
 
 
     // Title
     &__title{
+        position: relative;
+        z-index: 53;
         
         font-family: 'Titan One';
         font-weight: 400;
@@ -48,13 +60,12 @@
 
 // Hero buttons
     &__button{
+        position: relative;
+        z-index: 53;
         margin-top: 20px;
         display: flex;
         gap: 8px;
         
-        // @media screen and (min-width: 768px) {
-             
-        //     }
         @media screen and (min-width: 1200px) {
             margin-top: 24px;
             gap: 12px;
@@ -86,7 +97,7 @@
         }
         @media screen and (min-width: 1200px) {
             display: flex;
-            // max-width: 266px;
+
             margin-top: 40px;
         }
 
@@ -104,29 +115,28 @@
     }
 
     &__image{
-        display: none;
         position: absolute;
-        top: 92px;
-        left: 117px;
+        top: 19%;
+        left: 34%;
 
-        width: 346px;
-        height: 344px;
+        max-width: 346px;
+        max-height: 344px;
 
             @media screen and (min-width: 768px) {
-                width: 335px;
-                height: 333px;
+                max-width: 335px;
+                max-height: 333px;
+                top: 23%;
+                left: 47%;
         
             }
         
             @media screen and (min-width: 1200px) {
-                width: 534px;
-                height: 534px;
+                max-width: 534px;
+                max-height: 534px;
+                top: 11%;
+                left: 50%;
         
             }
-        
-        background-image: radial-gradient(circle at center, #FFA5BA 60%, #FFB8CA 0%);
-            background-position: 25% 75%;
-            background-repeat: no-repeat;
        
             
         &-picture{
@@ -163,7 +173,6 @@
         &::before{
             content: '';
             position: absolute;
-            // top: 0;
             right: -10px;
             z-index: 3;
 
@@ -174,6 +183,8 @@
         }
     }
     &__shop-number{
+        position: relative;
+        z-index: 51;
         font-family: var(--font-second);
         font-size: 28px;
         line-height: 1.14;
