@@ -6,6 +6,7 @@
 
 .footer__text {
   max-width: 234px;
+  margin-top: 40px;
 
   font-family: 'Titan One';
   font-style: normal;
@@ -87,4 +88,19 @@
 
     text-decoration: none;
   }
+}
+
+// Footer Copyright styles
+
+.footer__copyright {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  /* or 21px */
+
+  text-align: center;
+
+  color: #907e82;
 }
