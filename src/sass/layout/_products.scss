@@ -319,9 +319,16 @@ transform: translateY(-50%);
 }
 
 .products__btn-svg{
-    
+    background-color: inherit;
+    border-radius: 50%;
+    transition : box-shadow var(--anim-link);
+padding: 0;
     @media screen and (min-width:768px) {
         margin-top: 32px;
+        
     }
-  
+
+    &:hover{
+        box-shadow: 11px 0px 30px -8px rgba(0,0,0,0.75);
+    }
 }
