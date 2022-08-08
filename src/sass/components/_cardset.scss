@@ -18,7 +18,7 @@
 
 
 &__item{
-    flex-basis: calc(100% / var(--card-number)- var(--gap));
+    flex-basis: calc(100% / var(--card-number) - var(--gap));
     margin-left: var(--gap);
     margin-top: var(--top);
 }
