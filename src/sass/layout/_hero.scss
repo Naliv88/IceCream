@@ -6,9 +6,6 @@
 
     background-image: radial-gradient(circle at 75% 50%, #FFA5BA 65%, #FFB8CA 0%);
     background-repeat: no-repeat;
-    // background-size: 346px 344px;
-    // background-position: 75% 50%;
-    // , url(../image/favicon/1-hero-header/hero_sm.png)
 
 
     padding-top: 194px;
@@ -18,7 +15,6 @@
             padding-top: 102px;
             padding-bottom: 16px;
             background-image: radial-gradient(circle at 60% 50%, #FFA5BA 30%, #FFB8CA 0%);
-            // background-size: 335px 333px;
         }
     
         @media screen and (min-width: 1200px) {
@@ -27,7 +23,6 @@
             background-image: radial-gradient(circle at 62% 45%,
                 #ffa5ba 31%,
                 #ffb8ca 0%);
-                // background-size: 534px 534px;
         }
 
 
@@ -120,10 +115,9 @@
     }
 
     &__image{
-        // display: none;
         position: absolute;
-        top: 65px;
-        left: 117px;
+        top: 19%;
+        left: 34%;
 
         max-width: 346px;
         max-height: 344px;
@@ -179,7 +173,6 @@
         &::before{
             content: '';
             position: absolute;
-            // top: 0;
             right: -10px;
             z-index: 3;
 
