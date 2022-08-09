@@ -1,31 +1,31 @@
 // загальне значення для кнопок, крім Hero
 .btn-other {
-    text-align: center;
-    border-radius: 22px;
-    padding: 13px 37px;
-    font-size: 16px;
-    font-size: 16px;
-    line-height: 1.31;
+  text-align: center;
+  border-radius: 22px;
+  padding: 13px 37px;
+  font-size: 16px;
+  font-size: 16px;
+  line-height: 1.31;
 }
 // загальне значення для кнопки HERO
-.btn-hero{
-    text-align: center;
-    border-radius: 20px;
-    padding: 11px 24px;
-    font-size: 14px;
-    line-height: 1.29;
+.btn-hero {
+  text-align: center;
+  border-radius: 20px;
+  padding: 11px 24px;
+  font-size: 14px;
+  line-height: 1.29;
 }
 //клас-модифікатор для білої кнопки
-.btn-white{
-    color: var(--color-general);
-    background-color: var(--btn-white);
-    &:hover,
-    &:focus{
-        background-color: #ECEBEB;
-    }
+.btn-white {
+  color: var(--color-general);
+  background-color: var(--btn-white);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 //клас-модифікатор для красної кнопки
-.btn-red{
-    color: var(--btn-white);
-    background-color: var(--color-general);
-    }
+.btn-red {
+  color: var(--btn-white);
+  background-color: var(--color-general);
+}
