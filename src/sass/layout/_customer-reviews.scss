@@ -7,6 +7,7 @@
 .customer__inner {
     display: flex;
     justify-content: center;
+    margin-top: 120px;
 }
 
 .slider {
@@ -16,6 +17,7 @@
 .slider__item {
     max-width: 968px;
     text-align: center;
+    position: relative;
 }
 
 .customer__circle {
@@ -23,6 +25,7 @@
     height: 4px;
     background-color: #C7133E;
     position: relative;
+
 }
 
 .customer__circle::after,
@@ -35,6 +38,7 @@
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
+    margin-top: 16px;
 }
 
 .customer__circle::before {
@@ -51,12 +55,22 @@
     background-color: #FAFAFA;
     background-image: url(../image/6-customer-reviews/review_png.png);
     background-repeat: no-repeat;
-    background-position: left 70px top 32px;
-    text-decoration: underline #E1E1E1;
+    background-position: left 86px top 32px;
 }
 
+.review__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    border-bottom: #E1E1E1 1px solid;
+    margin: 0;
+}
+
+
 .customer__name {
-    margin-top: 16px;
+    margin-top: 36px;
     font-weight: 500;
     font-size: 20px;
     line-height: 186%;
