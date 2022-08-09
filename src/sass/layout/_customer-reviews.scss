@@ -5,10 +5,19 @@
 
 .slider {
     display: flex;
-    border: 2px solid black;
+    position: relative;
+    
 }
 
 .slider__item  {
     width: 968px;
     // height: 138px;
+}
+
+.customer__dots {
+    position: absolute;
+    width: 4 px;
+    height: 4px;
+    color: var(--color-general);
+    border-radius: 50%;
 }
