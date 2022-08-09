@@ -153,39 +153,14 @@
         bottom: 0;
         left: 34%;
 
-        // max-width: 346px;
-        // max-height: 344px;
-
             @media screen and (min-width: 768px) {
-                // max-width: 335px;
-                // max-height: 333px;
-                // top: 23%;
                 left: 47%;
-        
             }
         
             @media screen and (min-width: 1200px) {
-                // max-width: 534px;
-                // max-height: 534px;
-                // top: 11%;
                 left: 50%;
         
-            }
-       
-            
-        &-picture{
-            // max-width: 171px; 
-            @media screen and (min-width: 768px) {
-                // max-width: 143px;
-            
-            }
-            
-            @media screen and (min-width: 1200px) {     
-                // max-width: 236px;
-
-            }
-        }
-        
+            }     
     }
 
 
