@@ -3,7 +3,22 @@
     @media screen and (max-width:767px) {
         justify-content: center;
         align-items:  center;
+        margin-bottom: 170px;
+        margin-top: 60px;
      }
+
+ @media screen and (min-width:768px) and (max-width:1199px) {
+        justify-content: center;
+        align-items:  center;
+        margin-bottom: 120px;
+     }
+
+     @media screen and (min-width: 1200px) {
+        justify-content: center;
+        align-items:  center;
+        margin-bottom: 260px;
+    }
+
 
      }
 .products__inner{
@@ -66,7 +81,6 @@ margin-bottom: 20px;
 line-height: 66px;
 letter-spacing: 0.06em;
 margin-top: 16px;
-margin-bottom: 158px
 }
 
 }
@@ -94,7 +108,7 @@ margin-top: var(--top);
     width: 280px;
 height: 489px;
 margin-left: var(--gap);
-margin-top: var(--top);
+margin-top: 160px;
 }
 
 @media screen and (min-width:768px) and (max-width:1199px) {
@@ -121,23 +135,112 @@ margin-left: 16px;
     width: 280px;
     height: 280px;
     position: absolute;
-    top: -30%;
-    top: -60%;
+    top: -33%;
+    left: 52%;
     transform: translateX(-50%);
    background-position: center;
+   background-image: url(../image/2-products/ice-cream1_sm.png);
    background-repeat: no-repeat;
+  
+   @media screen and (min-width:768px) {
+    background-image: url(../image/2-products/ice-cream1_md.png);
+    top: -30%;
+    left: 52%;
+    width: 224px;
+    height: 224px;
+}
+
+   @media screen and (min-width: 1200px) {
+    background-image: url(../image/2-products/ice-cream1_xl.png);
+    top: -50%;
+    left: 52%;
+    width:368px ;
+    height: 394px;
+}
+
 } 
+.products-img__2{
+    position: relative;
+
+}
+.products-img__2::after{
+    content: "";
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: -30%;
+    left: 52%;
+    transform: translateX(-50%);
+   background-position: center;
+   background-image: url(../image/2-products/ice-cream2_sm.png);
+   background-repeat: no-repeat;
+  
+   @media screen and (min-width:768px) {
+    background-image: url(../image/2-products/ice-cream2_md.png);
+    top: -33%;
+    left: 52%;
+    width: 224px;
+    height: 224px;
+}
+
+   @media screen and (min-width: 1200px) {
+    background-image: url(../image/2-products/ice-cream2_xl.png);
+    top: -50%;
+    left: 52%;
+    width:368px ;
+    height: 394px;
+}
+}
+.products-img__3{
+    position:relative;
+}
+
+.products-img__3::after{
+    content: "";
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: -33%;
+    left: 52%;
+    transform: translateX(-50%);
+   background-position: center;
+   background-image: url(../image/2-products/ice-cream3_sm.png);
+   background-repeat: no-repeat;
+  
+   @media screen and (min-width:768px) {
+    background-image: url(../image/2-products/ice-cream3_md.png);
+    top: -33%;
+    left: 52%;
+    width: 224px;
+    height: 224px;
+}
+
+   @media screen and (min-width: 1200px) {
+    background-image: url(../image/2-products/ice-cream3_xl.png);
+    top: -50%;
+    left: 52%;
+    width:368px ;
+    height: 394px;
+}
+}
 
 
-.products__set-box{
+.products__set-box {
     justify-content: center;
     align-items: center;
     flex-direction: column;
     display: flex;
-  padding-top: 200px;
+  padding-top: 180px;
+
+  @media screen and (max-width:767px) {
+    padding-top: 131px;
+  }
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    padding-top: 100px;
+  }
 }
 
-.products__title{
+.products__title {
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -164,6 +267,7 @@ margin-left: 16px;
     background-color: white;
     border-radius: 50%;
     position: relative;
+    top: -30px;
 }
 .products__dotter::after,
 .products__dotter::before{
@@ -173,6 +277,7 @@ margin-left: 16px;
   width: 6px;
   height: 6px; 
   border-radius: 50%;
+
 }
 
 .products__dotter::after{
@@ -198,17 +303,32 @@ transform: translateY(-50%);
     letter-spacing: 0.04em;
     color: #FFFFFF;
     width: 45%;
-    margin-bottom: 32px;
 
     @media screen and (min-width:768px) {
         font-size: 16px;
       line-height: 176%;
-      width: 60%;
+      width: 80%;
+      height: 150px;
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: 176%;
         width: 245px;
         height: 106px;
+    }
+}
+
+.products__btn-svg{
+    background-color: inherit;
+    border-radius: 50%;
+    transition : box-shadow var(--anim-link);
+padding: 0;
+    @media screen and (min-width:768px) {
+        margin-top: 32px;
+        
+    }
+
+    &:hover{
+        box-shadow: 11px 0px 30px -8px rgba(0,0,0,0.75);
     }
 }
