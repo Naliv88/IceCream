@@ -24,7 +24,7 @@
             padding-top: 123px;
             padding-bottom: 60px;
             background-image: radial-gradient(circle at 62% 48%,
-                #ffa5ba 32%,
+                var(--color-second) 32%,
                 #ffb8ca 0%);
         }
     }
@@ -92,9 +92,6 @@
         }
         
     }
-    &__button--color-text{
-            color: var(--color-general);
-        }
 
     &__label{
         display: none;
@@ -135,7 +132,7 @@
             transition: box-shadow var(--anim-link);
             
             &:hover, &:focus{
-                box-shadow: 2px 2px 15px -2px #D41443;
+                box-shadow: 2px 2px 15px -2px var(--color-general);
                 cursor: pointer;
             }
         }
@@ -189,7 +186,7 @@
 
             width: 16px;
             height: 16px;
-            background-color: #FFFFFF;
+            background-color: var(--btn-white);
             border-radius: 50%;
         }
     }
@@ -211,7 +208,7 @@
         line-height: 10px;
         text-align: right;
         
-        color: #FFFFFF;
+        color: var(--btn-white);
     }
 
 
