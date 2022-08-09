@@ -13,12 +13,12 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--gap));
-    margin-top: calc(-1 * var(--top));
+    margin-left: calc(-1 * var(--gap) );
+    margin-top: calc(-1 * var(--top) );
 
 
 &__item{
-    flex-basis: calc(100% / var(--card-number) - var(--gap));
+    flex-basis: calc(100% / var(--card-number) - var(--gap) );
     margin-left: var(--gap);
     margin-top: var(--top);
 }
