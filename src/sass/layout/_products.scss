@@ -93,6 +93,7 @@ margin-top: 16px;
    display: block;
    justify-content: center;
    align-items:  center;
+  
 }
 }
 .card-set__item{
@@ -108,7 +109,7 @@ margin-top: var(--top);
     width: 280px;
 height: 489px;
 margin-left: var(--gap);
-margin-top: 160px;
+margin-top: 170px;
 }
 
 @media screen and (min-width:768px) and (max-width:1199px) {
@@ -135,7 +136,7 @@ margin-left: 16px;
     width: 280px;
     height: 280px;
     position: absolute;
-    top: -33%;
+    top: -35%;
     left: 52%;
     transform: translateX(-50%);
    background-position: center;
@@ -144,7 +145,7 @@ margin-left: 16px;
   
    @media screen and (min-width:768px) {
     background-image: url(../image/2-products/ice-cream1_md.png);
-    top: -30%;
+    top: -33%;
     left: 52%;
     width: 224px;
     height: 224px;
@@ -168,7 +169,7 @@ margin-left: 16px;
     width: 280px;
     height: 280px;
     position: absolute;
-    top: -30%;
+    top: -35%;
     left: 52%;
     transform: translateX(-50%);
    background-position: center;
@@ -200,7 +201,7 @@ margin-left: 16px;
     width: 280px;
     height: 280px;
     position: absolute;
-    top: -33%;
+    top: -35%;
     left: 52%;
     transform: translateX(-50%);
    background-position: center;
