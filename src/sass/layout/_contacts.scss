@@ -1,0 +1,104 @@
+// Background
+.contacts{
+    background: linear-gradient( #ffffff 20%, #FFF5F6 20%);
+}
+
+// Описание фонтов
+.contacts__header {
+    color: var(--color-title);
+}
+
+.contacts__desc,
+.contacts__contact-link {
+    color: var(--color-text);
+}
+
+//!!!! УДАЛИТЬ ПОСЛЕ ДОБАВЛЕНИЯ a {text-decoration:none}!!!!!
+.contacts__contact-link{
+ text-decoration: none;
+}
+
+// Эффект ховера
+.contacts__contact-link:hover{
+    color: var(--color-general);
+}
+
+.contacts__hours {
+    color: var(--color-second);
+}
+
+// Колористика карточки
+.cardset__item {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+}
+
+// Описание карты
+ .contact__card{padding: 40px;
+background-color: var(--btn-white);
+line-height: 1.83;
+}
+
+// Категория заведения
+.contacts__category--cafe, .contacts__category--food-truck{
+    display: block;
+    display: inline-block;
+
+    height: 28px;
+
+    text-align: center;
+}
+
+.contacts__category--cafe{
+    width: 73px;
+    background-color: #F0D1A5;
+}
+
+.contacts__category--food-truck{
+    width: 138px;
+    background-color: #C2E297;
+}
+
+// Полоска
+.contacts__place, .conacts__work-hours{
+    border-bottom: 1px solid #E1E1E1;
+    padding: 32px 0;
+}
+
+.contacts__contact{
+    padding-top: 32px;
+}
+
+
+// Позиционирование кнопок
+.contacts_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+// Описание кнопок
+.contacts_locations-btn, .contacts_franchise-btn{
+    border-radius: 22px;
+    width: 198px;
+    height: 44px;
+
+    margin-bottom: 60px;
+
+    font-weight: 700;
+}
+
+.contacts_franchise-btn:hover{
+    background-color: var(--btn-white-hover);
+}
