@@ -3,79 +3,79 @@
 
     display: block;
     background-color: #FFB8CA;
-    ;
+    
 }
 
-.header__container {
-    margin: 0 auto;
-    padding: 37px 15px;
-
-}
 
 
 .header__inner {
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
 .header__logo {
     display: block;
     text-align: center;
-    margin-right: 128px;
-    padding: 10px 30px;
+    padding: 8px 0;
+    
+    fill:var( --color-general);
 
+    @media screen and (min-width: 768px) {
+        padding: 32px 0;
+    }
 
-    background-color: #188CE8;
+    @media screen and (min-width: 1200px) {
+        padding: 37px 0;
+        margin-right: 128px;
+    }
 }
+
 
 
 
 .nav__list {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-}
-
-.nav {
 
     display: none;
 
     @media screen and (min-width: 1200px) {
         display: flex;
+        gap: 35px;
+        padding-left: 0;
+        margin-bottom: 0;
     }
 
 }
 
 .nav__link {
     
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 21px;
-        /* identical to box height */
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31px;
+
+    padding: 37px 0;
     
-        display: flex;
-        align-items: center;
-    
-        color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 
 .header__menu-btn {
+    display: flex;
+        align-items: center;
+        justify-content: center;
 
     border: none;
-    width: 40px;
-    height: 40px;
+    padding: 0;
     margin-left: auto;
-    margin-right: 32px;
+    background-color: #FFB8CA;;
+    
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    @media screen and (min-width: 768px) {
+        margin-right: 32px;
+    }
 
     @media screen and (min-width: 1200px) {
         display: none;
@@ -85,8 +85,10 @@
 
 .header__button {
 
-    @media screen and (max-width: 768px) {
-            display: none;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
         }
 
     @media screen and (min-width: 1200px) {

@@ -1,10 +1,14 @@
 
 
 <header class="header">
-    <div class="container">
+    <div class="header__container container">
         <div class="header__inner">
 
-            <a href="./index.html " class="header__logo">logo</a>
+            <a href="./index.html " class="header__logo">
+                <svg class="mobile-menu-ikon" width="199" height="50">
+                    <use class="" href="./image/ico/icons.svg#icon-logo"></use>
+                </svg>
+            </a>
 
             <nav class=" nav ">
                 <ul class="nav__list">
@@ -28,10 +32,12 @@
             </nav>
 
             <button class="header__menu-btn" type="button">
-                <svg class="header__icon" width="18" height="18">
-                    <use class="header__svg-burger"></use>
-                    <use class="header__svg-close"></use>
+
+                <svg class="header__icon" width="40" height="24">
+                    <use class="header__svg-burger" href="./image/ico/icons.svg#icon-mobile-burger"></use>
+                    <use class="header__svg-close" href="./image/ico/icons.svg#icon-mobile-cross"></use>
                 </svg>
+                
             </button>
 
             <button class="header__button btn-white btn-other" type="button">Buy now</button>
