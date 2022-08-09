@@ -37,9 +37,7 @@
     }
 }
 .products__label{
-    
-    font-family: 'Titan One';
-    font-style: normal;
+    font-family: var(--font-second);
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -59,8 +57,7 @@
 }
 
 .products__main-title{
-    font-family: 'Titan One';
-font-style: normal;
+    font-family: var(--font-second);
 font-size: 34px;
 line-height: 39px;
 text-align: center;
@@ -86,7 +83,7 @@ margin-top: 16px;
 }
 
 //*Card-set*//
-.cardset{
+.products .cardset{
    margin-bottom: 60px;
    display: flex;
    @media screen and (max-width:767px) {
@@ -96,7 +93,7 @@ margin-top: 16px;
   
 }
 }
-.card-set__item{
+.products .card-set__item{
     width: 368px;
 height: 535px;
 background: #FFB8CA;
@@ -142,6 +139,7 @@ margin-left: 16px;
    background-position: center;
    background-image: url(../image/2-products/ice-cream1_sm.png);
    background-repeat: no-repeat;
+   background-size: cover;
 
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
@@ -199,6 +197,7 @@ height: 224px;
    background-position: center;
    background-image: url(../image/2-products/ice-cream2_sm.png);
    background-repeat: no-repeat;
+   background-size: cover;
   
    @media (min-device-pixel-ratio: 2),
    (-webkit-min-device-pixel-ratio: 2),
@@ -256,6 +255,7 @@ height: 224px;
    background-position: center;
    background-image: url(../image/2-products/ice-cream3_sm.png);
    background-repeat: no-repeat;
+   background-size: cover;
   
    @media (min-device-pixel-ratio: 2),
    (-webkit-min-device-pixel-ratio: 2),
@@ -316,8 +316,7 @@ height: 224px;
 }
 
 .products__title {
-    font-family: 'Titan One';
-    font-style: normal;
+    font-family: var(--font-second);
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -337,40 +336,12 @@ height: 224px;
 }
 
 .products__dotter{
-    width: 6px;
-    height: 6px; 
-    background-color: white;
-    border-radius: 50%;
-    position: relative;
-    top: -30px;
-}
-.products__dotter::after,
-.products__dotter::before{
-    content: "";
-  position: absolute;
-  background-color: white;
-  width: 6px;
-  height: 6px; 
-  border-radius: 50%;
-
+    font-size: 35px;
 }
 
-.products__dotter::after{
-    left:-10px;
-top:50%;
-transform: translateY(-50%);
-
-}
-
-.products__dotter::before{
-    right: -10px;
-    top:50%;
-transform: translateY(-50%);
-}
 
 .products__text{
-    font-family: 'DM Sans';
-    font-style: normal;
+    font-family: var(--font-general);
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
