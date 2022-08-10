@@ -1,41 +1,10 @@
-
-.products__box{
-    @media screen and (max-width:767px) {
-        justify-content: center;
-        align-items:  center;
-        margin-bottom: 170px;
-        margin-top: 60px;
-     }
-
- @media screen and (min-width:768px) and (max-width:1199px) {
-        justify-content: center;
-        align-items:  center;
-        margin-bottom: 120px;
-     }
-
-     @media screen and (min-width: 1200px) {
-        justify-content: center;
-        align-items:  center;
-        margin-bottom: 260px;
-    }
-
-
-     }
-.products__inner{
-    display: block;
-    flex-direction: column;
-
-    @media screen and (min-width: 768px) { 
-        display: flex;
-        margin-top: 60px;
-        flex-direction: column;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        margin-top: 61px;
-        flex-direction: column;
-    }
+.products {
+    padding: 60px 0;
 }
+.products__box{
+    width: 100%;
+}
+
 .products__label{
     font-family: var(--font-second);
     font-size: 18px;
@@ -83,37 +52,21 @@ margin-top: 16px;
 }
 
 //*Card-set*//
-.products .cardset{
-   margin-bottom: 60px;
-   display: flex;
-   @media screen and (max-width:767px) {
-   display: block;
-   justify-content: center;
-   align-items:  center;
-  
-}
-}
-.products .card-set__item{
-    width: 368px;
-height: 535px;
+.products .cardset__item{
 background: #FFB8CA;
 border-radius: 24px;
-flex-basis: calc(100% / var(--card-number) - var(--gap));
-margin-left: var(--gap);
-margin-top: var(--top);
-
-@media screen and (max-width:767px) {
-    width: 280px;
-height: 489px;
-margin-left: var(--gap);
-margin-top: 170px;
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
-    width: 224px;
-height: 473px;
-margin-left: 16px;
-}
+.products__set-box {
+    text-align: center;
+    padding-top: 120px;
+    position: relative;
+    @media screen and (min-width: 768px) {
+        padding-top: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 125px;
+    }
 }
 .item-2-color{
     background: #F0D1A5;
@@ -125,65 +78,81 @@ margin-left: 16px;
 /*Products-box*/
 .products-img{
     position: relative;
+    margin-top: 170px;
 
-}
+    @media screen and (min-width: 768px) {
+        margin-top: 158px;
+    }
 
-.products-img::after {
-    content: "";
-    width: 280px;
-    height: 280px;
-    position: absolute;
-    top: -35%;
-    left: 52%;
-    transform: translateX(-50%);
-   background-position: center;
-   background-image: url(../image/2-products/ice-cream1_sm.png);
-   background-repeat: no-repeat;
-   background-size: cover;
+    @media screen and (min-width: 1200px) {
+        margin-top: 280px;
+    }
 
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    background-image: url(../image/2-products/ice-cream1_sm@2x.png);
-   
-}
-
-@media screen and (min-width: 768px){
-background-image: url(../image/2-products/ice-cream1_md.png);
-top: -33%;
-left: 52%;
-width: 224px;
-height: 224px;
-
-// Для ретіна екранів планшетна версія
-@media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../image/2-products/ice-cream1_md@2x.png);
-}
-}
-
-@media screen and (min-width: 1200px) {
-    background-image: url(../image/2-products/ice-cream1_xl.png);
-    top: -50%;
-    left: 52%;
-    width:368px ;
-    height: 394px;
-
-// Для ретіна екранів десктопна версія
-@media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../image/2-products/ice-cream1_xl@2x.png);
+    &::after {
+        content: "";
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: -35%;
+        left: 50%;
+        transform: translateX(-50%);
+       background-position: center;
+       background-image: url(../image/2-products/ice-cream1_sm.png);
+       background-repeat: no-repeat;
+       background-size: cover;
     
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../image/2-products/ice-cream1_sm@2x.png);
+       
+    }
+    
+    @media screen and (min-width: 768px){
+    background-image: url(../image/2-products/ice-cream1_md.png);
+    top: -25%;
+    width: 224px;
+    height: 224px;
+    
+    // Для ретіна екранів планшетна версія
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../image/2-products/ice-cream1_md@2x.png);
+    }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        background-image: url(../image/2-products/ice-cream1_xl.png);
+        top: -50%;
+        width:368px ;
+        height: 394px;
+    
+    // Для ретіна екранів десктопна версія
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../image/2-products/ice-cream1_xl@2x.png);
+        
+    }
+    } 
+    }
 }
-} 
-}
+
 .products-img__2{
     position: relative;
+    margin-top: 170px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 158px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 280px;
+    }
 
 }
 .products-img__2::after{
@@ -192,7 +161,7 @@ height: 224px;
     height: 280px;
     position: absolute;
     top: -35%;
-    left: 52%;
+    left: 50%;
     transform: translateX(-50%);
    background-position: center;
    background-image: url(../image/2-products/ice-cream2_sm.png);
@@ -209,10 +178,9 @@ height: 224px;
    
    @media screen and (min-width: 768px) {
    background-image: url(../image/2-products/ice-cream2_md.png);
-   top: -33%;
-   left: 52%;
    width: 224px;
    height: 224px;
+   top: -25%;
    
    // Для ретіна екранів планшетна версія
    @media (min-device-pixel-ratio: 2),
@@ -225,10 +193,9 @@ height: 224px;
    
    @media screen and (min-width: 1200px) {
        background-image: url(../image/2-products/ice-cream2_xl.png);
-       top: -50%;
-       left: 52%;
        width:368px ;
        height: 394px;
+       top: -50%;
    
    // Для ретіна екранів десктопна версія
    @media (min-device-pixel-ratio: 2),
@@ -242,6 +209,15 @@ height: 224px;
 }
 .products-img__3{
     position:relative;
+    margin-top: 170px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 158px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 280px;
+    }
 }
 
 .products-img__3::after{
@@ -250,7 +226,7 @@ height: 224px;
     height: 280px;
     position: absolute;
     top: -35%;
-    left: 52%;
+    left: 50%;
     transform: translateX(-50%);
    background-position: center;
    background-image: url(../image/2-products/ice-cream3_sm.png);
@@ -267,10 +243,9 @@ height: 224px;
    
    @media screen and (min-width: 768px) {
    background-image: url(../image/2-products/ice-cream3_md.png);
-   top: -33%;
-   left: 52%;
    width: 224px;
    height: 224px;
+   top: -25%;
    
    // Для ретіна екранів планшетна версія
    @media (min-device-pixel-ratio: 2),
@@ -283,10 +258,9 @@ height: 224px;
    
    @media screen and (min-width: 1200px) {
        background-image: url(../image/2-products/ice-cream3_xl.png);
-       top: -50%;
-       left: 52%;
        width:368px ;
        height: 394px;
+       top: -50%;
    
    // Для ретіна екранів десктопна версія
    @media (min-device-pixel-ratio: 2),
@@ -297,22 +271,6 @@ height: 224px;
        
    }
    } 
-}
-
-
-.products__set-box {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-  padding-top: 180px;
-
-  @media screen and (max-width:767px) {
-    padding-top: 131px;
-  }
-  @media screen and (min-width:768px) and (max-width:1199px) {
-    padding-top: 100px;
-  }
 }
 
 .products__title {
@@ -336,7 +294,40 @@ height: 224px;
 }
 
 .products__dotter{
-    font-size: 35px;
+    width: 6px;
+    height: 6px; 
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    @media screen and (min-width: 768px) {
+        top: 150px;
+    }
+    @media screen and (min-width: 1200px) {
+        top: 200px;
+    }
+}
+.products__dotter::after,
+.products__dotter::before{
+    content: "";
+  position: absolute;
+  background-color: white;
+  width: 6px;
+  height: 6px; 
+  border-radius: 50%;
+}
+
+.products__dotter::after{
+    left:-10px;
+top:50%;
+transform: translateY(-50%);
+
+}
+
+.products__dotter::before{
+    right: -10px;
+    top:50%;
+transform: translateY(-50%);
 }
 
 
@@ -348,19 +339,10 @@ height: 224px;
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    width: 45%;
 
     @media screen and (min-width:768px) {
         font-size: 16px;
       line-height: 176%;
-      width: 80%;
-      height: 150px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: 176%;
-        width: 245px;
-        height: 106px;
     }
 }
 
@@ -369,9 +351,9 @@ height: 224px;
     border-radius: 50%;
     transition : box-shadow var(--anim-link);
     padding: 0;
-    @media screen and (min-width:768px) {
-        margin-top: 32px;
-        
+    margin-top: 32px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 60px;
     }
 
     &:hover{
