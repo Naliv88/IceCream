@@ -119,7 +119,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-bottom: 1px solid #E1E1E1;
+  // border-bottom: 1px solid #E1E1E1;
 
   @media screen and (max-width:767px) {
     gap: 40px;
@@ -162,7 +162,7 @@
   &::before {
     content: '';
     display: inline-block;
-    width: 100vw;
+    width: 100%;
     border-top: 1px solid #e1e1e1;
   }
 }
