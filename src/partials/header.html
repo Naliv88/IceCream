@@ -6,9 +6,7 @@
 
             <a href="./index.html " class="header__logo">
                 <svg class="header__icon" width="199" height="50">
-
-                    <use class="" href="./image/ico/icons.svg#icon-logo"></use>
-
+                    <use href="./image/ico/icons.svg#icon-logo"></use>
                 </svg>
             </a>
 
@@ -33,11 +31,13 @@
                 </ul>
             </nav>
 
-            <button class="header__menu-btn" type="button" data-menu-button>
-                <svg class="header__icon" width="60" height="35">
-                    <use class="header__svg-burger" href="./image/ico/icons.svg#icon-mobile-burger"></use>
-                    <!-- <use class="header__svg-close" href="./image/ico/icons.svg#icon-mobile-cross"></use> -->
-                </svg>
+            <button 
+            class="header__menu-btn js-open-menu" 
+            type="button" 
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            >
+                <span class="header__icon"></span>
             </button>
 
             <button class="header__button btn-white btn-other" type="button">Buy now &#62;</button>
@@ -47,12 +47,11 @@
 </header>
 
 
-<div class="mobil-menu">
+<div class="mobil-menu js-menu-container" id="mobile-menu">
 
-    <button class="mobil-menu__close-button" type="button" data-menu-button>
-        <svg class="header__icon" width="60" height="35">
-            <use class="header__svg-close" href="./image/ico/icons.svg#icon-mobile-cross"></use>
-        </svg>
+    <button 
+    class="mobil-menu__close-button js-close-menu" type="button">
+        <span class="header__close-btn"></span>
     </button>
 
     <button class="mobil-menu__button btn-white btn-other" type="button">Buy now &#62;</button>
