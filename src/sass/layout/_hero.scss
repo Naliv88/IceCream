@@ -1,6 +1,9 @@
 .hero{
 
-    background-color: #FFB8CA;
+    &__background{
+        background-color: #FFB8CA;
+    }
+    
     @media screen and (max-width: 767px) {
         background-image: radial-gradient(circle at 65% 55%, var(--color-second) 50%, #FFB8CA 0%);  
         }
@@ -8,7 +11,7 @@
     &__inner{
         position: relative;
         z-index: 50;
-      
+          
         background-repeat: no-repeat;
 
         padding-top: 194px;
