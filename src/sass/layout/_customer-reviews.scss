@@ -2,8 +2,6 @@
     margin-top: 120px;
 }
 
-
-
 .customer__inner {
     display: flex;
     justify-content: center;
@@ -29,7 +27,12 @@
     width: 4px;
     height: 4px;
     background-color: #C7133E;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    margin-top: 4px;
+    
 
 }
 
@@ -40,10 +43,9 @@
     height: 4px;
     background-color: #C7133E;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     border-radius: 50%;
-    margin-top: 16px;
+    
 }
 
 .customer__circle::before {
@@ -59,18 +61,22 @@
     background-color: #FAFAFA;
     background-image: url(../image/6-customer-reviews/review_png.png);
     background-repeat: no-repeat;
-    background-position: left 80px top 32px;
+    position: relative;
+    
 
     @media screen and (min-width: 320px) {
         padding: 43px 58px 26px 65px;
+        background-position: left 15% top 30px;
     }
 
     @media screen and (min-width: 768px) {
         padding: 37px 55px 44px 50px;
+        background-position: left 5px top 20px;
     }
 
     @media screen and (min-width: 1200px) {
         padding: 47px 109px 39px 109px;
+        background-position: left 9% top 30px;
     }
 }
 
@@ -82,8 +88,7 @@
     letter-spacing: 0.04em;
     margin: 0;
     background: repeating-linear-gradient(180deg, transparent 0px, transparent 30px, #E1E1E1 30px, #E1E1E1 31px);
-
-    height: 62px;
+    background-size: 62px auto;
 
     color: #000000;
 
