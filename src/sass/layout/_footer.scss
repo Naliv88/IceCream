@@ -48,20 +48,21 @@
 
   margin-top: 40px;
   margin-right: 20px;
+  margin-left: auto;
+}
 
-  //   &__icon {
-  //     &:not(:last-child) {
-  //       margin-right: 28px;
-  //     }
-  //   }
+.socials__link {
+  &:hover {
+  }
 }
 
 .footer__contacts {
   display: inline-block;
+  float: right;
   max-width: 230px;
   margin-top: 40px;
   margin-right: 20px;
-  margin-left: 70px;
+  margin-left: auto;
 
   &--text {
     font-family: 'DM Sans';
@@ -110,4 +111,10 @@
     width: 100vw;
     border-top: 1px solid #e1e1e1;
   }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  float: right;
 }
