@@ -58,21 +58,23 @@
 
 // Категория заведения
 .contacts__category--cafe, .contacts__category--food-truck{
-    display: block;
-    display: inline-block;
+   
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+    padding: 15px;
 
     height: 28px;
 
-    text-align: center;
 }
 
 .contacts__category--cafe{
-    width: 73px;
+
     background-color: #F0D1A5;
 }
 
 .contacts__category--food-truck{
-    width: 138px;
+ 
     background-color: #C2E297;
 }
 
