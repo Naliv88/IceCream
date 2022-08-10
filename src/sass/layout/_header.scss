@@ -125,7 +125,7 @@
     }
 }
 
-.header__icon {
+.header__menu-icon {
     width: 20px;
     height: 1px;
     background-color: var(--color-general);
@@ -133,8 +133,8 @@
     position: relative;
 }
 
-.header__icon::after,
-.header__icon::before {
+.header__menu-icon::after,
+.header__menu-icon::before {
     content: "";
     width: 20px;
     height: 1px;
@@ -144,11 +144,11 @@
     display: block;
 }
 
-.header__icon::after {
+.header__menu-icon::after {
     top: 6px;
 }
 
-.header__icon::before {
+.header__menu-icon::before {
     bottom: 6px;
 }
 
