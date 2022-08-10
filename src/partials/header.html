@@ -1,10 +1,14 @@
 
 
 <header class="header">
-    <div class="container">
+    <div class="header__container container">
         <div class="header__inner">
 
-            <a href="./index.html " class="header__logo">logo</a>
+            <a href="./index.html " class="header__logo">
+                <svg class="header__icon" width="199" height="50">               
+                    <use class="" href="./image/ico/icons.svg#icon-logo"></use>
+                </svg>
+            </a>
 
             <nav class=" nav ">
                 <ul class="nav__list">
@@ -16,7 +20,7 @@
                         <a href="" class="nav__link">About us</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">How it&#8217s made?</a>
+                        <a href="" class="nav__link">How it&#8217;s made?</a>
                     </li>
                     <li class="nav__item">
                         <a href="" class="nav__link">Our products</a>
@@ -27,14 +31,20 @@
                 </ul>
             </nav>
 
-            <button class="header__menu-btn" type="button">
-                <svg class="header__icon" width="18" height="18">
-                    <use class="header__svg-burger"></use>
-                    <use class="header__svg-close"></use>
+
+            <button class="header__menu-btn" type="button" data-menu-button>
+                <svg class="header__icon" width="60" height="35">
+                    <use class="header__svg-burger" href="./image/ico/icons.svg#icon-mobile-burger"></use>
+                    <use class="header__svg-close" href="./image/ico/icons.svg#icon-mobile-cross"></use>
                 </svg>
+                
             </button>
 
-            <button class="header__button" type="button">Buy now</button>
+            <button class="header__button btn-white btn-other" type="button">Buy now
+                <svg class="header__icon" width="20" height="12">
+                    <use class="header__svg-burger" href="./image/ico/icons.svg#icon-button-vector"></use>
+                </svg>
+            </button>
             
         </div>
     </div>

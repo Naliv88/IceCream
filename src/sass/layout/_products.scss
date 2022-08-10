@@ -1,30 +1,12 @@
-
-.products__box{
-    @media screen and (max-width:767px) {
-        justify-content: center;
-        align-items:  center;
-     }
-
-     }
-.products__inner{
-    display: block;
-    flex-direction: column;
-
-    @media screen and (min-width: 768px) { 
-        display: flex;
-        margin-top: 60px;
-        flex-direction: column;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        margin-top: 61px;
-        flex-direction: column;
-    }
+.products {
+    padding: 60px 0;
 }
+.products__box{
+    width: 100%;
+}
+
 .products__label{
-    
-    font-family: 'Titan One';
-    font-style: normal;
+    font-family: var(--font-second);
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -44,8 +26,7 @@
 }
 
 .products__main-title{
-    font-family: 'Titan One';
-font-style: normal;
+    font-family: var(--font-second);
 font-size: 34px;
 line-height: 39px;
 text-align: center;
@@ -66,42 +47,26 @@ margin-bottom: 20px;
 line-height: 66px;
 letter-spacing: 0.06em;
 margin-top: 16px;
-margin-bottom: 158px
 }
 
 }
 
 //*Card-set*//
-.cardset{
-   margin-bottom: 60px;
-   display: flex;
-   @media screen and (max-width:767px) {
-   display: block;
-   justify-content: center;
-   align-items:  center;
-}
-}
-.card-set__item{
-    width: 368px;
-height: 535px;
+.products .cardset__item{
 background: #FFB8CA;
 border-radius: 24px;
-flex-basis: calc(100% / var(--card-number) - var(--gap));
-margin-left: var(--gap);
-margin-top: var(--top);
-
-@media screen and (max-width:767px) {
-    width: 280px;
-height: 489px;
-margin-left: var(--gap);
-margin-top: var(--top);
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
-    width: 224px;
-height: 473px;
-margin-left: 16px;
-}
+.products__set-box {
+    text-align: center;
+    padding-top: 120px;
+    position: relative;
+    @media screen and (min-width: 768px) {
+        padding-top: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 125px;
+    }
 }
 .item-2-color{
     background: #F0D1A5;
@@ -113,33 +78,203 @@ margin-left: 16px;
 /*Products-box*/
 .products-img{
     position: relative;
+    margin-top: 170px;
 
+    @media screen and (min-width: 768px) {
+        margin-top: 158px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 280px;
+    }
+
+    &::after {
+        content: "";
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: -35%;
+        left: 50%;
+        transform: translateX(-50%);
+       background-position: center;
+       background-image: url(../image/2-products/ice-cream1_sm.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+    
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../image/2-products/ice-cream1_sm@2x.png);
+       
+    }
+    
+    @media screen and (min-width: 768px){
+    background-image: url(../image/2-products/ice-cream1_md.png);
+    top: -25%;
+    width: 224px;
+    height: 224px;
+    
+    // Для ретіна екранів планшетна версія
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../image/2-products/ice-cream1_md@2x.png);
+    }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        background-image: url(../image/2-products/ice-cream1_xl.png);
+        top: -50%;
+        width:368px ;
+        height: 394px;
+    
+    // Для ретіна екранів десктопна версія
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../image/2-products/ice-cream1_xl@2x.png);
+        
+    }
+    } 
+    }
 }
 
-.products-img::after {
+.products-img__2{
+    position: relative;
+    margin-top: 170px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 158px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 280px;
+    }
+
+}
+.products-img__2::after{
     content: "";
     width: 280px;
     height: 280px;
     position: absolute;
-    top: -30%;
-    top: -60%;
+    top: -35%;
+    left: 50%;
     transform: translateX(-50%);
    background-position: center;
+   background-image: url(../image/2-products/ice-cream2_sm.png);
    background-repeat: no-repeat;
-} 
+   background-size: cover;
+  
+   @media (min-device-pixel-ratio: 2),
+   (-webkit-min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+       background-image: url(../image/2-products/ice-cream2_sm@2x.png);
+      
+   }
+   
+   @media screen and (min-width: 768px) {
+   background-image: url(../image/2-products/ice-cream2_md.png);
+   width: 224px;
+   height: 224px;
+   top: -25%;
+   
+   // Для ретіна екранів планшетна версія
+   @media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+       background-image: url(../image/2-products/ice-cream2_md@2x.png);
+   }
+   }
+   
+   @media screen and (min-width: 1200px) {
+       background-image: url(../image/2-products/ice-cream2_xl.png);
+       width:368px ;
+       height: 394px;
+       top: -50%;
+   
+   // Для ретіна екранів десктопна версія
+   @media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+       background-image: url(../image/2-products/ice-cream2_xl@2x.png);
+       
+   }
+   } 
+}
+.products-img__3{
+    position:relative;
+    margin-top: 170px;
 
+    @media screen and (min-width: 768px) {
+        margin-top: 158px;
+    }
 
-.products__set-box{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-  padding-top: 200px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 280px;
+    }
 }
 
-.products__title{
-    font-family: 'Titan One';
-    font-style: normal;
+.products-img__3::after{
+    content: "";
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+   background-position: center;
+   background-image: url(../image/2-products/ice-cream3_sm.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+   @media (min-device-pixel-ratio: 2),
+   (-webkit-min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+       background-image: url(../image/2-products/ice-cream3_sm@2x.png);
+      
+   }
+   
+   @media screen and (min-width: 768px) {
+   background-image: url(../image/2-products/ice-cream3_md.png);
+   width: 224px;
+   height: 224px;
+   top: -25%;
+   
+   // Для ретіна екранів планшетна версія
+   @media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+       background-image: url(../image/2-products/ice-cream3_md@2x.png);
+   }
+   }
+   
+   @media screen and (min-width: 1200px) {
+       background-image: url(../image/2-products/ice-cream3_xl.png);
+       width:368px ;
+       height: 394px;
+       top: -50%;
+   
+   // Для ретіна екранів десктопна версія
+   @media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+       background-image: url(../image/2-products/ice-cream3_xl@2x.png);
+       
+   }
+   } 
+}
+
+.products__title {
+    font-family: var(--font-second);
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -163,7 +298,14 @@ margin-left: 16px;
     height: 6px; 
     background-color: white;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    top: 180px;
+    @media screen and (min-width: 768px) {
+        top: 150px;
+    }
+    @media screen and (min-width: 1200px) {
+        top: 200px;
+    }
 }
 .products__dotter::after,
 .products__dotter::before{
@@ -188,27 +330,33 @@ transform: translateY(-50%);
 transform: translateY(-50%);
 }
 
+
 .products__text{
-    font-family: 'DM Sans';
-    font-style: normal;
+    font-family: var(--font-general);
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    width: 45%;
-    margin-bottom: 32px;
 
     @media screen and (min-width:768px) {
         font-size: 16px;
       line-height: 176%;
-      width: 60%;
     }
+}
+
+.products__btn-svg{
+    background-color: inherit;
+    border-radius: 50%;
+    transition : box-shadow var(--anim-link);
+    padding: 0;
+    margin-top: 32px;
     @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: 176%;
-        width: 245px;
-        height: 106px;
+        margin-top: 60px;
+    }
+
+    &:hover{
+        box-shadow: 11px 0px 30px -8px rgba(0,0,0,0.75);
     }
 }
