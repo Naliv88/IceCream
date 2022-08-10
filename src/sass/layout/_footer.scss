@@ -53,11 +53,12 @@
 
 .socials__link {
   &:hover {
+    fill: #d41443;
   }
 }
 
 .footer__contacts {
-  display: inline-block;
+  //   display: inline-block;
   float: right;
   max-width: 230px;
   margin-top: 40px;
@@ -116,5 +117,5 @@
 .content {
   display: flex;
   flex-direction: column;
-  float: right;
+  justify-items: flex-end;
 }
