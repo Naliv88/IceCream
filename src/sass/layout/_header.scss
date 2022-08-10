@@ -13,7 +13,7 @@
 
 
 .header__inner {
-   
+   position: relative;
     display: flex;
     align-items: center;
 }
@@ -174,10 +174,10 @@
 
 // mobil-menu
 
-
 .mobil-menu {
     
     position: fixed;
+    
     top: 0;
     right: 0;
 
@@ -188,7 +188,7 @@
 
     width: 254px;
     height: 100%;
-    z-index: 100;
+    z-index: 160;
     transition: transform 250ms;
 
     background-color: #E17992;
