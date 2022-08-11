@@ -143,7 +143,7 @@
 .footer__group {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: flex-end;
   @media screen and (max-width:767px) {
     width: 100%;
   }
