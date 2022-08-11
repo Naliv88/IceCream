@@ -57,7 +57,7 @@
     margin-right: auto;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: left top 600px;
+    background-position: left bottom 190px;
     background-size: contain;
     background-image: url(../image/3-about/about-bg_sm.png);
 
@@ -73,7 +73,7 @@
         }
         
     @media screen and (min-width: 1200px){
-        background-position: center;
+        background-position: bottom;
         background-size: cover;
         background-image: url(../image/3-about/about-bg_xl.png);
     
