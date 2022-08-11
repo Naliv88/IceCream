@@ -10,7 +10,7 @@
                 </svg>
             </a>
 
-            <nav class=" nav ">
+            <nav class=" nav " id="nav">
                 <ul class="nav__list">
 
                     <li class="nav__item ">
@@ -57,29 +57,36 @@
             
                 <button class="mobil-menu__button btn-white btn-other" type="button">Buy now &#62;</button>
             
-                <nav class="menu-nav ">
+                <nav class="menu-nav">
                     <ul class="menu-nav__list">
             
                         <li class="menu-nav__item ">
-                            <a href="" class="menu-nav__link current">Home</a>
+                            <a href="#" data-scroll="#home" class="menu-nav__link current">Home</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">About us</a>
+                            <a href="#" data-scroll="#advent" class="menu-nav__link">About us</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">How it&#8217;s made?</a>
+                            <a href="#" data-scroll="#about" class="menu-nav__link">How it&#8217;s made?</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Our products</a>
+                            <a href="#" data-scroll="#products" class="menu-nav__link">Our products</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Contact</a>
+                            <a href="#" data-scroll="#contacts" class="menu-nav__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
+            <button data-scroll class="btn-top scrollto" onclick="topFunction()" id="top-btn" title="Go to top">
+                <svg class="btn-top__svg">
+                    <use href="./image/ico/icons.svg#icon-to-tog"></use>
+                </svg>
+            </button>
         </div>
     </div>
 </header>
+
+
 
 

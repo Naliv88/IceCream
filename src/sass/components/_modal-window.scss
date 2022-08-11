@@ -8,10 +8,14 @@
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
-    display: none;
     padding: 15px;
-
     transition: opacity var(--anim), visability var(--anim);
+    z-index: 1000 ;
+    &.is-hidden {
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+    }
 }
 
 .modal {
@@ -28,7 +32,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
     padding: 15px;
 
 
@@ -45,24 +48,17 @@
 
 .modal__btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 5px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
-    padding: 0;
-    fill: var(--btn-white);
     cursor: pointer;
-    margin: 8px;
-    transition: fill var(--anim);
-
-    &:hover,
-    &:focus+svg {
-        fill: var(--btn-white-hover);
-        cursor: pointer;
-    }
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .map {
@@ -70,24 +66,14 @@
     height: 100%;
 }
 
-.modal__btn {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-}
-
 .modal__btn-close {
     position: relative;
     content: "";
     display: block;
     width: 20px;
-    height: 1px;
-    background-color: black;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--color-general);
     transform: rotate(45deg);
     transition: transform 250ms linear;
 }
@@ -96,8 +82,9 @@
     position: absolute;
     content: "";
     width: 20px;
-    height: 1px;
-    background-color: black;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--color-general);
     transform: rotate(90deg);
     top: 0;
     left: 0;
@@ -105,9 +92,26 @@
 }
 
 .modal__btn:hover .modal__btn-close {
-    transform: rotate(0deg);
+    animation-duration:1000ms;
+    animation-name: rotate-1;
 }
-.modal__btn:hover .modal__btn-close::after {
-    transform: rotate(0deg);
-    top: 10px;
-}
+
+
+
+  @keyframes rotate-1 {
+
+
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(46deg);
+    }
+  }
+
