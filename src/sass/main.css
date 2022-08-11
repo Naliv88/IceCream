@@ -1365,17 +1365,18 @@ body.no-scroll {
   }
 }
 
-.advantages__icon {
-  fill: var(--color-second);
+.advantages__image {
+  width: 44px;
+  height: 50px;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
-  .advantages__icon {
+  .advantages__image {
     margin-bottom: 36px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .advantages__icon {
+  .advantages__image {
     margin-bottom: 40px;
   }
 }
