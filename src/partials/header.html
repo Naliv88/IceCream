@@ -31,21 +31,26 @@
                 </ul>
             </nav>
 
-            <button 
-            class="header__menu-btn js-open-menu" 
-            type="button" 
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            >
-                <span class="header__menu-icon"></span>
-            </button>
+            <div class="header__group-btn">
+                <button 
+                class="header__menu-btn js-open-menu" 
+                type="button" 
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                >
+                    <span class="header__menu-icon"></span>
+                </button>
 
-            <button class="header__button btn-white btn-other" type="button">Buy now &#62;</button>
+                <button class="header__button btn-white btn-other" type="button">
+                    Buy now <svg class="svg-vector">
+                        <use href="./image/ico/icons.svg#icon-button-vector"></use>
+                    </svg>
+                </button>
+            </div>
 
             <div class="mobil-menu js-menu-container" id="mobile-menu">
             
-                <button 
-                class="mobil-menu__close-button js-close-menu" type="button">
+                <button class="mobil-menu__close-button js-close-menu" type="button">
                     <span class="header__close-btn"></span>
                 </button>
             

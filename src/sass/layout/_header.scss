@@ -3,10 +3,7 @@
 
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: RGB(0,0, 0,0);
+    background-color: #FFB8CA;
     z-index: 150;
     width: 100%;
 }
@@ -79,7 +76,7 @@
     width: 20px;
     height: 12px;
     background: transparent;
-
+    
     @media screen and (min-width: 768px) {
         margin-right: 32px;
     }
@@ -88,7 +85,11 @@
         display: none;
     }
 }
-
+.header__menu-btn.is-open {
+    @media screen and (min-width: 820px) and (max-width: 1199px) {
+        display: none;
+    }
+}
 
 
 .header__svg-close {
@@ -98,12 +99,13 @@
     & {
         fill: var(--btn-white);
     }
-
-    .header__menu-btn.is-open & {
-        opacity: 1;
-    }
 }
 
+.header__group-btn {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
 
 
 .header__button {
@@ -118,6 +120,8 @@
         display: flex;
         width: 159px;
         height: 44px;
+        align-items: center;
+        justify-content: space-between;
     }
 
     @media screen and (min-width: 1200px) {

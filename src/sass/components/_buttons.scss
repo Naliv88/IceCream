@@ -29,3 +29,10 @@
   color: var(--btn-white);
   background-color: var(--color-general);
 }
+
+.svg-vector {
+  width: 10px;
+  height: 16px;
+  fill: var(--color-general);
+  transform: rotate(90deg);
+}
