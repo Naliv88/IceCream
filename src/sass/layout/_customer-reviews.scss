@@ -82,15 +82,19 @@
 
 .review__text {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
+    font-size: 12px;
+    line-height: 2.6;
     text-align: center;
     letter-spacing: 0.04em;
     margin: 0;
     background: repeating-linear-gradient(180deg, transparent 0px, transparent 30px, #E1E1E1 30px, #E1E1E1 31px);
     background-size: 62px auto;
-
     color: #000000;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.8;
+    }
 
 }
 
