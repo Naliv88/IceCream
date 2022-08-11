@@ -32,7 +32,8 @@
             </nav>
 
             <div class="header__group-btn">
-                <button 
+                <button
+                data-menu-button
                 class="header__menu-btn js-open-menu" 
                 type="button" 
                 aria-expanded="false"
@@ -41,16 +42,16 @@
                     <span class="header__menu-icon"></span>
                 </button>
 
-                <button class="header__button btn-white btn-other" type="button">
+                <button data-header-btn class="header__button btn-white btn-other" type="button">
                     Buy now <svg class="svg-vector">
                         <use href="./image/ico/icons.svg#icon-button-vector"></use>
                     </svg>
                 </button>
             </div>
 
-            <div class="mobil-menu js-menu-container" id="mobile-menu">
+            <div data-menu class="mobil-menu js-menu-container" id="mobile-menu">
             
-                <button class="mobil-menu__close-button js-close-menu" type="button">
+                <button data-close-button class="mobil-menu__close-button js-close-menu" type="button">
                     <span class="header__close-btn"></span>
                 </button>
             

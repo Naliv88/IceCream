@@ -129,6 +129,10 @@
     }
 }
 
+.header__button.is-open {
+    display: none;
+}
+
 .header__menu-icon {
     width: 20px;
     height: 1px;
@@ -205,12 +209,14 @@
 
 .mobil-menu__close-button {
     position: absolute;
-    top: 15px;
-    right: 0;
+    top: 20px;
+    right: 32px;
 
     padding: 0;
 
     background-color:#E17992;
+    width: 20px;
+    height: 20px;
 }
 
 .mobil-menu__button {
