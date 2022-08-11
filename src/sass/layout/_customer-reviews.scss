@@ -15,6 +15,8 @@
     width: 100%;
     text-align: center;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .customer__photo {
@@ -24,16 +26,16 @@
 }
 
 .customer__circle {
+    content: "";
     width: 4px;
     height: 4px;
     background-color: #C7133E;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
     border-radius: 50%;
     margin-top: 4px;
-    
-
+    bottom: -30px;
 }
 
 .customer__circle::after,
@@ -43,13 +45,11 @@
     height: 4px;
     background-color: #C7133E;
     position: absolute;
-    top: 0;
     border-radius: 50%;
     
 }
 
 .customer__circle::before {
-
     left: -10px;
 }
 
