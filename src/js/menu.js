@@ -44,28 +44,10 @@
 	});
 });
 
- $(document).ready(function(){
-	$("#menu").on("click","button", function (event) {
-    
-		//отменяем стандартную обработку нажатия по ссылке
-		event.preventDefault();
-
-		//забираем идентификатор бока с атрибута href
-		var id  = $(this).attr('href'),
-
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
-			top = $(id).offset().top;
-		
-		//анимируем переход на расстояние - top за 1500 мс
-		$('body,html').animate({scrollTop: top}, 1500);
-	});
-});
-
 $(function() {
 
 let nav = $("#nav");
 let navToggle = $("#navToggle");
-
 
    /* Smooth scroll */
 
@@ -82,10 +64,7 @@ scrollTop: elementOffset - 70
 });
 });
 
-
   /* Nav Toggle */
-
-
 
 $("#navToggle").on("click", function(event) {
 event.preventDefault();
@@ -94,6 +73,35 @@ nav.toggleClass("show");
 
 });
 
+});
 
+$(function() {
+
+let nav = $("#hero");
+let navToggle = $("#navToggle");
+
+   /* Smooth scroll */
+
+$("[data-scroll]").on("click", function(event) {
+event.preventDefault();
+
+let elementId = $(this).data('scroll');
+let elementOffset = $(elementId).offset().top;
+
+nav.removeClass("show");
+
+$("html, body").animate({
+scrollTop: elementOffset - 70
+});
+});
+
+  /* Nav Toggle */
+
+$("#navToggle").on("click", function(event) {
+event.preventDefault();
+
+nav.toggleClass("show");
+
+});
 
 });
