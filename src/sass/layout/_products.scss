@@ -1,54 +1,55 @@
 .products {
     padding: 60px 0;
-}
-.products__box{
-    width: 100%;
-}
 
-.products__label{
-    font-family: var(--font-second);
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFA5BA;
+    &__box{
+        width: 100%;
+    }
     
-        @media screen and (min-width: 768px) { 
-            font-size: 26px;
-            line-height: 30px;
-        }
-        @media screen and (min-width: 1200px) {
-            font-size: 30px;
-            line-height: 34px;
-            letter-spacing: 0.04em;
-        }
-     
-}
-
-.products__main-title{
-    font-family: var(--font-second);
-font-size: 34px;
-line-height: 39px;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #D41443;
-margin-top: 15px;
-margin-bottom: 8px;
-
-@media screen and (min-width: 768px) { 
-    font-size: 48px;
-line-height: 55px;
-margin-top: 18px;
-margin-bottom: 20px;
-}
-@media screen and (min-width: 1200px) {
-    font-size: 58px;
-line-height: 66px;
-letter-spacing: 0.06em;
-margin-top: 16px;
-}
-
+    &__label{
+        font-family: var(--font-second);
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFA5BA;
+        
+            @media screen and (min-width: 768px) { 
+                font-size: 26px;
+                line-height: 30px;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 30px;
+                line-height: 34px;
+                letter-spacing: 0.04em;
+            }
+         
+    }
+    
+    &__main-title{
+        font-family: var(--font-second);
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    
+    @media screen and (min-width: 768px) { 
+        font-size: 48px;
+    line-height: 55px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    margin-top: 16px;
+    }
+    
+    }
 }
 
 //*Card-set*//
@@ -80,7 +81,7 @@ border-radius: 24px;
 }
 
 /*Products-box*/
-.products-img{
+.products-img {
     position: relative;
     margin-top: 170px;
 
@@ -277,94 +278,97 @@ border-radius: 24px;
    } 
 }
 
-.products__title {
-    font-family: var(--font-second);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 70px;
-    position: relative;
+.products {
 
-    @media screen and (min-width: 1200px) {
-        font-size: 30px;
-        line-height: 34px;
+    &__title {
+        font-family: var(--font-second);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 70px;
+        position: relative;
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 30px;
+            line-height: 34px;
+            
+        }
         
     }
     
-}
-
-.products__dotter{
-    width: 6px;
-    height: 6px; 
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 180px;
-    @media screen and (min-width: 768px) {
-        top: 150px;
+    &__dotter{
+        width: 6px;
+        height: 6px; 
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 180px;
+        @media screen and (min-width: 768px) {
+            top: 150px;
+        }
+        @media screen and (min-width: 1200px) {
+            top: 200px;
+        }
     }
-    @media screen and (min-width: 1200px) {
-        top: 200px;
+    &__dotter::after,
+    &__dotter::before{
+        content: "";
+      position: absolute;
+      background-color: white;
+      width: 6px;
+      height: 6px; 
+      border-radius: 50%;
     }
-}
-.products__dotter::after,
-.products__dotter::before{
-    content: "";
-  position: absolute;
-  background-color: white;
-  width: 6px;
-  height: 6px; 
-  border-radius: 50%;
-}
-
-.products__dotter::after{
-    left:-10px;
-top:50%;
-transform: translateY(-50%);
-
-}
-
-.products__dotter::before{
-    right: -10px;
+    
+    &__dotter::after{
+        left:-10px;
     top:50%;
-transform: translateY(-50%);
-}
-
-
-.products__text{
-    font-family: var(--font-general);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 152%;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-
-    @media screen and (min-width:768px) {
-        font-size: 16px;
-      line-height: 176%;
+    transform: translateY(-50%);
+    
     }
-}
-
-.products__btn-svg{
-    background-color: inherit;
-    border-radius: 50%;
-    transition : box-shadow var(--anim-link);
-    padding: 0;
-    margin-top: 32px;
-    cursor: pointer;
-   
-
-    @media screen and (min-width: 1200px) {
-        margin-top: 60px;
+    
+    &__dotter::before{
+        right: -10px;
+        top:50%;
+    transform: translateY(-50%);
     }
-
-    &:hover{
-        box-shadow: 11px 0px 30px -8px rgba(0,0,0,0.75);
+    
+    
+    &__text{
+        font-family: var(--font-general);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 152%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+    
+        @media screen and (min-width:768px) {
+            font-size: 16px;
+          line-height: 176%;
+        }
+    }
+    
+    &__btn-svg{
+        background-color: inherit;
+        border-radius: 50%;
+        transition : box-shadow var(--anim-link);
+        padding: 0;
+        margin-top: 32px;
+        cursor: pointer;
+       
+    
+        @media screen and (min-width: 1200px) {
+            margin-top: 60px;
+        }
+    
+        &:hover{
+            box-shadow: 11px 0px 30px -8px rgba(0,0,0,0.75);
+        }
     }
 }
 

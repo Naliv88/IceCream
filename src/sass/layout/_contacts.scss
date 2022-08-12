@@ -1,31 +1,27 @@
 // Background
 .contacts{
-      
-        background: linear-gradient( #ffffff 20%, #FFF5F6 20%);
+    background: linear-gradient( #ffffff 20%, #FFF5F6 20%);
+    margin-top: 120px;
+    // Описание фонтов
+    &__header {
+        color: var(--color-title);
     }
-
-
-// Описание фонтов
-.contacts__header {
-    color: var(--color-title);
+    
+    &__desc,
+    &__contact-link {
+        color: var(--color-text);
+    }
+    
+    &__hours {
+        color: var(--color-second);
+    }
+    
+    
+    // Эффект ховера
+    &__contact-link:hover{
+        color: var(--color-general);
+    }
 }
-
-.contacts__desc,
-.contacts__contact-link {
-    color: var(--color-text);
-}
-
-.contacts__hours {
-    color: var(--color-second);
-}
-
-
-// Эффект ховера
-.contacts__contact-link:hover{
-    color: var(--color-general);
-}
-
-.contacts{margin-top: 120px;}
 
 /* -------------------------------------------------------------------------- */
 /*                                   cardset                                  */
