@@ -356,6 +356,7 @@ transform: translateY(-50%);
     transition : box-shadow var(--anim-link);
     padding: 0;
     margin-top: 32px;
+    cursor: pointer;
    
 
     @media screen and (min-width: 1200px) {

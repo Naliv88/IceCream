@@ -27,62 +27,73 @@
 
  })();      
  
-//  $(function() {
+ $(document).ready(function(){
+	$("#menu").on("click","a", function (event) {
+    
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+});
+
+ $(document).ready(function(){
+	$("#menu").on("click","button", function (event) {
+    
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+});
+
+$(function() {
+
+let nav = $("#menu");
+let navToggle = $("#navToggle");
 
 
-//   /* Fixed Header */
-// let header = $("#header");
-// let intro = $("#intro");
-// let introH = intro.innerHeight();
-// let scrollPos = $(window).scrollTop();
-// let nav = $("#nav");
-// let navToggle = $("#navToggle");
+   /* Smooth scroll */
 
-// checkScroll(scrollPos, introH);
+$("[data-scroll]").on("click", function(event) {
+event.preventDefault();
 
-// $(window).on("scroll resize", function() {
-// introH = intro.innerHeight();
-// scrollPos = $(this).scrollTop();
+let elementId = $(this).data('scroll');
+let elementOffset = $(elementId).offset().top;
 
-// checkScroll(scrollPos, introH);
-// });
+nav.removeClass("show");
 
-// function checkScroll(scrollPos, introH) {
-// if( scrollPos > introH ) {
-// header.addClass("fixed");
-// } else {
-// header.removeClass("fixed");
-// }
-// }
+$("html, body").animate({
+scrollTop: elementOffset - 70
+});
+});
 
 
-//    /* Smooth scroll */
-
-// $("[data-scroll]").on("click", function(event) {
-// event.preventDefault();
-
-// let elementId = $(this).data('scroll');
-// let elementOffset = $(elementId).offset().top;
-
-// nav.removeClass("show");
-
-// $("html, body").animate({
-// scrollTop: elementOffset - 70
-// });
-// });
-
-
-//   /* Nav Toggle */
+  /* Nav Toggle */
 
 
 
-// $("#navToggle").on("click", function(event) {
-// event.preventDefault();
+$("#navToggle").on("click", function(event) {
+event.preventDefault();
 
-// nav.toggleClass("show");
+nav.toggleClass("show");
 
-// });
+});
 
 
 
-// });
+});
