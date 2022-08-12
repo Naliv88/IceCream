@@ -6,6 +6,11 @@
   const mobileMenuRef = document.querySelector("[data-menu]");
   const headerBtn = document.querySelector("[data-header-btn]");
   const bodyScrollLock = document.querySelector("[data-body]");
+  const clickLinkNav1 = document.querySelector("[data-link-1]");
+  const clickLinkNav2 = document.querySelector("[data-link-2]");
+  const clickLinkNav3 = document.querySelector("[data-link-3]");
+  const clickLinkNav4 = document.querySelector("[data-link-4]");
+  const clickLinkNav5 = document.querySelector("[data-link-5]");
   menuBtnRef.addEventListener("click", () => {
     const expanded=
      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
@@ -24,6 +29,52 @@
     headerBtn.classList.remove("is-open");
     bodyScrollLock.classList.remove("no-scroll");
   });
+  clickLinkNav1.addEventListener("click", () => {
+    const expanded=
+     menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    menuBtnRef.classList.remove("is-open");
+    menuBtnRef.setAttribute("artia-expanded", !expanded);
+    mobileMenuRef.classList.remove("is-open");
+    headerBtn.classList.remove("is-open");
+    bodyScrollLock.classList.remove("no-scroll");
+  });
+  clickLinkNav2.addEventListener("click", () => {
+    const expanded=
+     menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    menuBtnRef.classList.remove("is-open");
+    menuBtnRef.setAttribute("artia-expanded", !expanded);
+    mobileMenuRef.classList.remove("is-open");
+    headerBtn.classList.remove("is-open");
+    bodyScrollLock.classList.remove("no-scroll");
+  });
+  clickLinkNav3.addEventListener("click", () => {
+    const expanded=
+     menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    menuBtnRef.classList.remove("is-open");
+    menuBtnRef.setAttribute("artia-expanded", !expanded);
+    mobileMenuRef.classList.remove("is-open");
+    headerBtn.classList.remove("is-open");
+    bodyScrollLock.classList.remove("no-scroll");
+  });
+  clickLinkNav4.addEventListener("click", () => {
+    const expanded=
+     menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    menuBtnRef.classList.remove("is-open");
+    menuBtnRef.setAttribute("artia-expanded", !expanded);
+    mobileMenuRef.classList.remove("is-open");
+    headerBtn.classList.remove("is-open");
+    bodyScrollLock.classList.remove("no-scroll");
+  });
+  clickLinkNav5.addEventListener("click", () => {
+    const expanded=
+     menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    menuBtnRef.classList.remove("is-open");
+    menuBtnRef.setAttribute("artia-expanded", !expanded);
+    mobileMenuRef.classList.remove("is-open");
+    headerBtn.classList.remove("is-open");
+    bodyScrollLock.classList.remove("no-scroll");
+  });
+  
 
  })();      
  
