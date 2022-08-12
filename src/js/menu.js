@@ -63,7 +63,7 @@
 
 $(function() {
 
-let nav = $("#menu");
+let nav = $("#nav");
 let navToggle = $("#navToggle");
 
 
