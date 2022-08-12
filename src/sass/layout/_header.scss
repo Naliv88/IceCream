@@ -76,6 +76,7 @@
     width: 20px;
     height: 12px;
     background: transparent;
+    transition: transform 250ms linear;
     
     @media screen and (min-width: 768px) {
         margin-right: 32px;
@@ -87,7 +88,7 @@
 }
 .header__menu-btn.is-open {
     @media screen and (min-width: 820px) and (max-width: 1199px) {
-        display: none;
+        transform: translateY(500%);
     }
 }
 
@@ -105,11 +106,13 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    overflow: hidden;
 }
 
 
 .header__button {
     display: none;
+    transition: transform 250ms linear;
 
     @media screen and (min-width: 768px) {
         font-family: var(--font-general);
@@ -130,7 +133,7 @@
 }
 
 .header__button.is-open {
-    display: none;
+    transform: translateY(100%);
 }
 
 .header__menu-icon {
