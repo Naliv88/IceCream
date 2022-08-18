@@ -11,17 +11,12 @@
     }
 
 
-&__item{
-    padding: 40px;
+    &__item{
 
-    @media screen and (min-width: 768px) {
-        flex-basis: calc(100% / var(--card-number) - var(--gap) );
-        margin-left: var(--gap);
-        margin-top: var(--top);
-        padding: 30px;
+        @media screen and (min-width: 768px) {
+            flex-basis: calc(100% / var(--card-number) - var(--gap) );
+            margin-left: var(--gap);
+            margin-top: var(--top);
+        }        
     }
-    @media screen and (min-width: 1200px) {
-        padding: 60px;
-    }
-}
 }
