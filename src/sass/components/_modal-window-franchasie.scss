@@ -1,0 +1,111 @@
+.franchise{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #E17992;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+    @media screen and (min-width: 768px) {
+        width: 250px;
+        height: 550px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 450px;
+        height: 600px;
+    }
+}
+
+.franchise__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.franchise__name{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+    &--input{
+    border-radius: 4px;   
+    padding-left: 10px;
+    }
+
+    &--input:active{
+        border: sold 1px var(--color-general);
+    }
+}
+
+
+
+.franchise__message--input{
+    height: 120px;
+    padding-bottom: 90px;
+    margin-bottom: 30px;
+}
+
+
+
+.franchise__btn{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 22px;
+    font-weight: 700;
+    
+    color: var(--btn-white);
+    background-color: var(--color-general);
+}
+
+.franchise__btn--close{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.franchise__btn--close:hover .modal__btn-close{
+    animation-duration: 1000ms;
+    animation-name: rotate-1;
+            
+    @keyframes rotate-1 {
+        
+    0% {
+       transform: rotate(45deg);
+       }
+    
+    25% {
+        transform: rotate(0deg);
+        }
+    
+    50% {
+        transform: rotate(180deg);
+        }
+    
+    100% {
+        transform: rotate(46deg);
+        }
+    }
+}
