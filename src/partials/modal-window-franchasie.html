@@ -1,29 +1,31 @@
 <div class="backdrop is-hidden" data-franchise>
   <div class="franchise">
-    <form>
+    <form class="franchise__form">
       <label class="franchise__fieldset"
-        ><strong> Заполните форму заявки ниже, и мы Вам перезвоним </strong>
+        ><strong>
+          Fill out the application form below and we will call you back
+        </strong>
       </label>
       <label class="franchise__name">
-        Имя
-        <input
-          class="franchise__fieldset--input"
-          type="text"
-          placeholder="Ваше имя"
-          name="username"
-        />
-      </label>
-      <label class="franchise__name">
-        Название компании
+        <span class="franchise__name--desc"> Name </span>
         <input
           class="franchise__name--input"
           type="text"
-          placeholder="Название Вашей компании"
+          placeholder="Your name"
           name="username"
         />
       </label>
       <label class="franchise__name">
-        Номер телефона
+        <span class="franchise__name--desc"> Company name </span>
+        <input
+          class="franchise__name--input"
+          type="text"
+          placeholder="Company name"
+          name="username"
+        />
+      </label>
+      <label class="franchise__name">
+        <span class="franchise__name--desc"> Phone number </span>
         <input
           class="franchise__name--input"
           s
@@ -33,26 +35,26 @@
         />
       </label>
       <label class="franchise__name">
-        Email
+        <span class="franchise__name--desc"> Email </span>
         <input
-          class="="
+          class="franchise__name--input"
           type="text"
-          placeholder="email@mail.com"
+          placeholder="email@email.com"
           name="email"
         />
       </label>
-      <label class="franchisefranchise__message">
-        Сообщение
+      <label class="franchise__name franchise__message">
+        <span class="franchise__message--desc">Message</span>
         <input
-          class="franchise__message--input"
+          class="franchise__name--input franchise__message--input"
           type="text"
           rows="6"
-          placeholder="Введите подробности обращения"
+          placeholder="Please insert your message here"
         />
       </label>
     </form>
-    <button class="franchise__btn" type="submit">Отправить заявку</button>
-    <button type="button" data-franchise-close>
+    <button class="franchise__btn" type="submit">Send message</button>
+    <button class="franchise__btn--close" type="button" data-franchise-close>
       <span class="modal__btn-close"></span>
     </button>
   </div>
