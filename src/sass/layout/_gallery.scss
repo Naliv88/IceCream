@@ -10,16 +10,11 @@
     }
     &__item {
         margin: 0;
-        border-radius: 10px;
         overflow: hidden;
         transition-property: transform, border-radius;
         transition-duration: 250ms;
         transition-timing-function: linear;
         cursor: pointer;
-    
-        @media screen and (min-width:768px) {
-            border-radius: 22px;
-        }
     }
     &__item:hover, 
     &__item:focus {
