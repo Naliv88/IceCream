@@ -1,15 +1,15 @@
 
-.buy-now {
 
+.buy-now {
+    position: absolute;
     width:100%;
     height: auto;
-    background-color: #ffa5baee;
-    padding: 50px 15px;
-
-    position: absolute;
     top: 50%;
     left: 50%;
+    padding: 50px 15px;
     transform: translate(-50%,-50%);
+    background-color: #ffa5baee;
+    box-shadow: 0px 0px 36px -9px rgba(132, 45, 121, 1);
 
     @media screen and (max-width:768px) {
            
@@ -19,9 +19,7 @@
     @media screen and ( min-width:768px) {
         width: 400px;
         padding: 40px 35px;
-
-        border-radius: 15px;
-        
+        border-radius: 15px;  
     }
 
     @media screen and (min-width:1200px) {
@@ -74,7 +72,20 @@
         }
     }
 
-    
+    &__comment {
+        width: 100%;
+        min-height: 120px;
+        padding: 12px 20px;
+        margin-bottom: 15px;
+        outline: transparent;
+
+        resize: none;
+
+        &::placeholder {
+            font-family: var(--font-general);
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
 
     &__button { 
         width: 155px;
@@ -87,41 +98,8 @@
         
 
         margin-left: auto;
-        margin-right: auto;
-        
-    }
-
-    &__comment {
-        width: 100%;
-        min-height: 120px;
-        padding: 12px 20px;
-        outline: transparent;
-    
-        resize: none;
-    
-        &::placeholder {
-            font-family: var(--font-general);
-            color: rgba(117, 117, 117, 0.5);
-        }
-    }
-}
-
-
-
-.label-title-terms {
-
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    color: var(--text-color);
-
-
-    @media screen and (min-width: 1200px) {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-
-    }
+        margin-right: auto;  
+    }  
 }
 
 .input {
@@ -131,7 +109,7 @@
 
     &:hover,
     &:focus {
-        border: 1px solid var(--color-general);
+    border: 1px solid var(--color-general);
     box-shadow: inset 0px 0px 4px 1px rgba(239, 11, 35, 1);
     }
 }
