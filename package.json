@@ -2,20 +2,20 @@
   "name": "goit-icecream",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Naliv88.github.io/goit-icecream",
+  "homepage": "https://Naliv88.github.io/IceCream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-icecream/"
+    "build": "parcel build src/*.html --public-url /IceCream/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Naliv88/goit-icecream.git"
+    "url": "git+https://github.com/Naliv88/IceCream.git"
   },
   "keywords": [],
   "author": "Alexander Repeta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Naliv88/goit-icecream/issues"
+    "url": "https://github.com/Naliv88/IceCream/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
