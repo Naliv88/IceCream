@@ -1,0 +1,2 @@
+function scrollFunction(){document.body.scrollTop>200||document.documentElement.scrollTop>200?document.getElementById("top-btn").style.display="flex":document.getElementById("top-btn").style.display="none"}window.onscroll=function(){scrollFunction()},$((function(){$("[data-scroll]").on("click",(function(o){o.preventDefault();var t=$(this).data("scroll"),n=$(t).offset().top;$("html, body").animate({scrollTop:n-70})}))}));
+//# sourceMappingURL=index.51f9460d.js.map
